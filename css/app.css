@@ -3,10 +3,14 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    background: url('../images/showcase.jpg') no-repeat center center;
+    min-height: 100%;
+    line-height: 1.5;
+}
+
+#bg-img{
     background-size: cover;
     background-attachment: fixed;
-    line-height: 1.5;
+    background: url('../images/showcase.jpg') no-repeat center center;
 }
 
 .dark-overlay{
@@ -16,7 +20,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(33,33,33 ,.8);
+    background: rgba(33,33,33 ,.9);
 }
 
 .container{
@@ -183,6 +187,10 @@ main{
     font-size: 3rem;
 }
 
+.heading-about{
+    margin-top: 15vh !important;
+}
+
 .secondary-text{
     color: rgba(0,188,212 ,1);
 }
@@ -205,6 +213,54 @@ main{
 .icons > a:hover{
     transition: color .5s ease-in-out;
     color: rgba(0,188,212 ,1);
+}
+
+#about-page{
+    background: rgba(33,33,33 ,.9);
+}
+
+.about-info{
+    display: flex;
+    flex-flow: row;
+    margin-top: 3rem !important;
+}
+
+.about-image{
+    width: 230px;
+    height: 250px;
+    border-radius:50%;
+    margin-right: 50px;
+    border: solid rgba(0,188,212 ,1) 2px;
+}
+
+.bio , footer h3{
+    color: aliceblue;
+}
+
+.bio p{
+    font-size: 18px;
+}
+
+.contact-email{
+    color: rgba(0,188,212 ,1);
+    transition: all .5s ease-in-out;
+}
+
+.contact-email:hover{
+    text-decoration: underline;
+}
+
+footer h3{
+    margin:4rem 0 2rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .about-info{
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
