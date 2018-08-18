@@ -1,8 +1,8 @@
-body{
+html,body{
     font-family: 'Raleway',sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    height: 100%;
     line-height: 1.5;
 }
 
@@ -221,8 +221,8 @@ header{
 }
 
 .about-image{
-    width: 230px;
-    height: 250px;
+    width: 230px !important;
+    height: 250px !important;
     border-radius:50%;
     margin-right: 50px;
     border: solid rgba(0,188,212 ,1) 2px;
@@ -236,12 +236,12 @@ header{
     font-size: 18px;
 }
 
-.contact-email{
+.contact-link{
     color: rgba(0,188,212 ,1);
     transition: all .5s ease-in-out;
 }
 
-.contact-email:hover{
+.contact-link:hover{
     text-decoration: underline;
 }
 
@@ -253,7 +253,7 @@ footer h3{
 .projects{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    grid-gap: 0.7rem;
+    grid-gap: 0.9rem;
 }
 
 .item{
@@ -263,7 +263,6 @@ footer h3{
 .item-img{
     width: 100%;
     height: 220px;
-    transition: all .5s ease-out;
 }
 
 .btn-light,.btn-dark{
@@ -312,8 +311,6 @@ footer h3{
 .skill h5{
     font-size: 1.1rem;
 }
-
-
 
 @media screen and (max-width: 992px) {
     .about-info{
