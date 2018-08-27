@@ -233,7 +233,7 @@ header{
 }
 
 .bio p{
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .contact-link{
@@ -355,5 +355,14 @@ footer h3{
 
     .skills{
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    .bio{
+        word-spacing: 2px;
+        word-break: normal;
     }
 }
