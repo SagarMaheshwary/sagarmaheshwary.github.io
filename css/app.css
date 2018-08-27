@@ -1,5 +1,5 @@
 html,body{
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Montserrat',sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -310,6 +310,10 @@ footer h3{
 
 .skill h5{
     font-size: 1.1rem;
+}
+
+footer h3{
+    font-weight: normal;
 }
 
 @media screen and (max-width: 992px) {
