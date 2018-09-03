@@ -220,11 +220,16 @@ header{
     margin-top: 3rem !important;
 }
 
+.about-img-div{
+    width: 250px !important;
+    height: auto;
+    margin-right: 50px;
+}
+
 .about-image{
     width: 230px !important;
     height: 250px !important;
     border-radius:50%;
-    margin-right: 50px;
     border: solid rgba(0,188,212 ,1) 2px;
 }
 
