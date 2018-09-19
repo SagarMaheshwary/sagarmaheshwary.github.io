@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <script src="js/scrollreveal.min.js"></script>
     <title>Sagar Maheshwary | Web Developer</title>
 </head>
 
@@ -37,9 +38,9 @@
     </header>
     <main>
         <div class="container" id="home">
-            <h1 class="branding-lg">Sagar <span class="secondary-text">Maheshwary</span></h1>
-            <h2 class="branding-sm">Programmer, Web &amp; Application Developer.</h2>
-            <div class="icons">
+            <h1 class="branding-lg load-hidden">Sagar <span class="secondary-text">Maheshwary</span></h1>
+            <h2 class="branding-sm load-hidden">Programmer, Web &amp; Application Developer.</h2>
+            <div class="icons load-hidden">
                 <a href="https://github.com/SagarMaheshwary" target="_blank">
                     <i class="fab fa-github fa-2x"></i>
                 </a>
@@ -50,6 +51,22 @@
         </div>
     </main>
     <script src="js/app.js"></script>
+    <script>
+        ScrollReveal().reveal('.branding-lg',{
+            distance: '10%',
+            origin:'bottom'
+        });
+        ScrollReveal().reveal('.branding-sm',{
+            delay: 500,
+            distance: '50%',
+            origin: 'bottom'
+        });
+        ScrollReveal().reveal('.icons',{
+            delay: 1000,
+            distance: '50%',
+            origin:'bottom'
+        });
+    </script>
 </body>
 
 </html>

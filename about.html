@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/app.css">
         <meta name="theme-color" content="#00BCD4">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="js/scrollreveal.min.js"></script>
         <title>Sagar Maheshwary | About Me</title>
     </head>
 
@@ -37,7 +38,7 @@
                 <h1 class="branding-lg heading-about">About
                     <span class="secondary-text">Me</span></h1>
                 <div class="about-info">
-                    <div class="about-img-div">
+                    <div class="about-img">
                         <img src="./images/avatar.jpg" alt="Sagar Maheshwary" class="about-image">
                     </div>
                     <div class="bio">
@@ -95,6 +96,33 @@
             <h3>&copy; 2018 Sagar Maheshwary</h3>
         </footer>
         <script src="js/app.js"></script>
+        <script>
+
+            function makeScrollReveal(el,dist,org,op){
+                ScrollReveal().reveal(el,{
+                    distance: dist,
+                    origin:org,
+                    opacity:op
+                });    
+            }
+
+            makeScrollReveal(
+                '.branding-lg' ,'50%' ,'bottom' ,0
+            );
+
+            makeScrollReveal(
+                '.bio' ,'20%' ,'right' ,0
+            );
+
+            makeScrollReveal(
+                '.about-img' ,'20%' ,'left' ,0
+            );
+
+            makeScrollReveal(
+                '.skill' ,'20%' ,'bottom' ,0
+            );
+            
+        </script>
     </body>
 
 </html>

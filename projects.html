@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <script src="js/scrollreveal.min.js"></script>
     <title>Sagar Maheshwary | Projects</title>
 </head>
 
@@ -37,13 +38,19 @@
 
     <main>
         <div class="container">
-            <h1 class="branding-lg heading-projects">My <span class="secondary-text">Projects</span></h1>
-            <h2 class="branding-sm">Here are some of my projects.</h2>
+            <h1 class="branding-lg load-hidden heading-projects">My <span class="secondary-text">Projects</span></h1>
+            <h2 class="branding-sm load-hidden">Here are some of my projects.</h2>
             <div class="projects">
-                <div class="item">
-                    <a href="https://laracart-app.herokuapp.com" target="_blank">
-                        <img src="./images/projects/laracart.png" alt="Laracart Online Store" class="item-img">
-                    </a>
+                <div class="item load-hidden">
+                    <div class="item-details">
+                        <a href="https://laracart-app.herokuapp.com" target="_blank" class="project-link">
+                            <img src="./images/projects/laracart.png" alt="Laracart Online Store" class="item-img">
+                        </a>
+                        <div class="project-details">
+                            <h4>Laracart</h4>
+                            <p>An online store built on Laravel 5</p>
+                        </div>
+                    </div>
                     <a href="https://laracart-app.herokuapp.com" class="btn-light" target="_blank">
                         <i class="fas fa-eye"></i>
                         Project
@@ -53,7 +60,7 @@
                         Github
                     </a>
                 </div>
-                <div class="item">
+                <div class="item load-hidden">
                     <a href="https://desolate-thicket-54805.herokuapp.com" target="_blank">
                         <img src="./images/projects/ems.png" alt="Employee Management System" class="item-img">
                     </a>
@@ -66,7 +73,7 @@
                         Github
                     </a>
                 </div>
-                <div class="item">
+                <div class="item load-hidden">
                     <a href="https://github.com/SagarMaheshwary/LibraryManagementSystem" target="_blank">
                         <img src="./images/projects/lms.png" alt="Library Management System" class="item-img">
                     </a>
@@ -79,7 +86,7 @@
                         Github
                     </a>
                 </div>
-                <div class="item">
+                <div class="item load-hidden">
                     <a href="https://github.com/SagarMaheshwary/Disease-and-Medicine-Guide-for-Windows-8.1" target="_blank">
                         <img src="./images/projects/medicine_guide.png" alt="Employee Management System" class="item-img">
                     </a>
@@ -92,7 +99,7 @@
                         Github
                     </a>
                 </div>
-                <div class="item">
+                <div class="item load-hidden">
                     <a href="https://github.com/SagarMaheshwary/eyeonic" target="_blank">
                         <img src="./images/projects/eyeonic.png" alt="Eyeonic Frames & Lenses" class="item-img">
                     </a>
@@ -112,6 +119,22 @@
         <h3>&copy; 2018 Sagar Maheshwary</h3>
     </footer>
     <script src="js/app.js"></script>
+    <script>
+        ScrollReveal().reveal('.branding-lg',{
+            distance: '10%',
+            origin:'bottom'
+        });
+        ScrollReveal().reveal('.branding-sm',{
+            delay: 500,
+            distance: '50%',
+            origin: 'bottom'
+        });
+        ScrollReveal().reveal('.item',{
+            delay: 500,
+            distance:'10%',
+            origin:'bottom'
+        });
+    </script>
 </body>
 
 </html>
