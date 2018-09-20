@@ -6,6 +6,7 @@ html,body{
     line-height: 1.5;
 }
 
+/* css rule for scrollreveal */
 html.sr .load-hidden {
     visibility: hidden;
 }
@@ -285,14 +286,23 @@ footer h3{
     left: 0;
     height: 100%;
     width: 100%;
-    transition: all .3s;
+    transition: all .4s;
     visibility: hidden;
-    transform: translate3d(-100%,100%,0);
+    transform: translate3d(0,-100%,0);
+}
+
+.item-details div h4{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.item-details div p{
+    padding: 0 1rem;
 }
 
 .item:hover .item-details div{
     visibility: visible;
-    background: rgba(33,33,33 ,1);
+    background:rgba(0,188,212 ,.96);
     transform: translate3d(0,0,0);
 }
 

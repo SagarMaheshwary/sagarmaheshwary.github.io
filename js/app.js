@@ -6,6 +6,9 @@ let showMenu = false;
 
 menuBtn.addEventListener('click',toggleMenu);
 
+/**
+ * Toggle the nav menu.
+ */
 function toggleMenu(){
 	if(!showMenu){
 		menuBtn.classList.add('menu-close');
@@ -20,4 +23,18 @@ function toggleMenu(){
         menuLinks.forEach(item => item.classList.remove('show-item'));;
         showMenu = false;
 	}
+}
+
+/**
+ * add scrollreveal to elements.
+ * 
+ * @param {object} el 
+ * @param {string} dist 
+ * @param {string} org 
+ */
+function makeScrollReveal(el,dist,org){
+	ScrollReveal().reveal(el,{
+		distance: dist,
+		origin:org
+	});    
 }
