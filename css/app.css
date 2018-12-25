@@ -300,7 +300,7 @@ footer h3{
     padding: 0 1rem;
 }
 
-.item:hover .item-details div{
+.item-details:hover .project-details{
     visibility: visible;
     background:rgba(0,188,212 ,.96);
     transform: translate3d(0,0,0);
