@@ -1,27 +1,23 @@
-const menuBtn = document.querySelector('.menu-btn');
-const btnLine = document.querySelectorAll('.btn-line');
-const menu = document.querySelector('.menu');
-const menuLinks = document.querySelectorAll('.nav-item');
-let showMenu = false;
+var menu = document.querySelector('nav');
+var menuBar = document.querySelector('#menu');
+var btnLine = document.querySelectorAll('.btn-line');
+var menuList = document.querySelector('#menu-list');
+menuBar.addEventListener('click', toggleMenu);
+var showMenu = false;
 
-menuBtn.addEventListener('click',toggleMenu);
-
-/**
- * Toggle the nav menu.
- */
-function toggleMenu(){
-	if(!showMenu){
-		menuBtn.classList.add('menu-close');
-		menu.classList.add('show');
+function toggleMenu() {
+	if (!showMenu) {
+		menu.classList.add('menu-open');
+		menuBar.classList.add('menu-anim');
+		menuList.classList.add('show');
 		btnLine.forEach(item => item.classList.add('btn-close'));
-		menuLinks.forEach(item => item.classList.add('show-item'));
-        showMenu = true;
-	}else{
-		menuBtn.classList.remove('menu-close');
-		menu.classList.remove('show');
+		showMenu = true;
+	} else {
+		menu.classList.remove('menu-open');
+		menuBar.classList.remove('menu-anim');
+		menuList.classList.remove('show');
 		btnLine.forEach(item => item.classList.remove('btn-close'));
-        menuLinks.forEach(item => item.classList.remove('show-item'));;
-        showMenu = false;
+		showMenu = false;
 	}
 }
 
