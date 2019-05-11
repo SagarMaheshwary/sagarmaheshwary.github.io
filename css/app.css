@@ -367,6 +367,11 @@ footer h3{
     font-weight: normal;
 }
 
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
 @media screen and (max-width: 992px) {
     .about-info{
         flex-flow: column;
